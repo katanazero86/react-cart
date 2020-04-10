@@ -4,7 +4,9 @@
   "description": "> 프로젝트 목적\r > - react 학습\r > - 간단한 toy project\r > - 마크업 연습 및 학습",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --open --hot",
+    "build" : "webpack --mode production"
   },
   "repository": {
     "type": "git",
