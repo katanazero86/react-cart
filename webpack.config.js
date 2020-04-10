@@ -26,7 +26,7 @@ module.exports = {
                 use: [
                     // "style-loader",
                     MiniCssExtractPlugin.loader,
-                    { loader: 'css-loader', options : {sourceMap: true, modules: true} },
+                    { loader: 'css-loader', options : {sourceMap: true, modules : {localIdentName: '[name]_[hash:base64:5]'}} },
                     { loader: 'sass-loader', options : {sourceMap: true} }
                 ]
             }
@@ -35,10 +35,10 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
-            filename: "index.html"
+            filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: './index.css'
+            filename: './[name].[hash].css'
         }),
         new CleanWebpackPlugin({
             cleanAfterEveryBuildPatterns: ['dist']

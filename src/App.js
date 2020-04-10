@@ -1,11 +1,15 @@
 import React from 'react';
 
-import './App.scss'
+import AppStyle from './App.scss'
+import Test from "./components/Test";
 
 function App() {
+
+    console.log(AppStyle);
     return (
-        <div className='App-wrap'>
-            <p className='title'>react App Component</p>
+        <div className={AppStyle['App-wrap']}>
+            <p className={AppStyle['title']}>react App Component</p>
+            <Test/>
         </div>
     )
 }
