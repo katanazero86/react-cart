@@ -37,3 +37,43 @@ npm i -D style-loader css-loader sass-loader
 * plugin 은 부가적인 기능이며 번들링된 결과물에 추가효과를 부여한다고 이해하면 된다.
 ```
 
+## babel & webpack config
+
+```
+
+- 프로젝트 root 경로에 webpack.config.js 생성
+- 프로젝트 root 경로에 .babelrc 생성
+
+
+// .babelrc
+// 주의할점은 @babel 버전이 올라가면서 @babel/preset-env 형태로 작성을 안함
+{
+  "presets": ["@babel/env", "@babel/react"],
+  "plugins": []
+}
+
+
+// webpack.config.js
+const path = require('path');
+
+// plugin
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+module.exports = {
+    entry: [],
+    output : {
+
+    },
+    module : {
+
+    },
+    plugins : [
+
+    ],
+}
+
+- https://webpack.js.org/configuration/
+
+
+```
