@@ -28,6 +28,7 @@ npm i -S @babel/polyfill
 npm i -D webpack webpack-dev-server webpack-cli
 npm i -D html-webpack-plugin
 npm i -D mini-css-extract-plugin
+npm i -D clean-webpack-plugin
 
 // scss
 npm i -D style-loader css-loader sass-loader
@@ -59,6 +60,7 @@ const path = require('path');
 // plugin
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: [],
