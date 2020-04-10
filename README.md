@@ -31,7 +31,7 @@ npm i -D mini-css-extract-plugin
 npm i -D clean-webpack-plugin
 
 // scss
-npm i -D style-loader css-loader sass-loader
+npm i -D style-loader css-loader sass-loader node-sass
 
 
 * loader 는 웹팩이 번들링을 할때 JS가 아닌 자원(CSS, HTML, Image 등)들을 변환하게 해준다.
