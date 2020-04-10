@@ -1,0 +1,20 @@
+{
+  "name": "react-cart",
+  "version": "1.0.0",
+  "description": "> 프로젝트 목적\r > - react 학습\r > - 간단한 toy project\r > - 마크업 연습 및 학습",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katanazero86/react-cart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katanazero86/react-cart/issues"
+  },
+  "homepage": "https://github.com/katanazero86/react-cart#readme"
+}
