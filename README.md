@@ -78,4 +78,6 @@ module.exports = {
 - https://webpack.js.org/configuration/
 
 
+- /src/index.js 에 import '@babel/polyfill'; 코드 적용(polyfill)
+
 ```
