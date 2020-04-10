@@ -80,4 +80,8 @@ module.exports = {
 
 - /src/index.js 에 import '@babel/polyfill'; 코드 적용(polyfill)
 
+- redux 생성은 여러 reducer 를 combineReducers 를 한 후, createStore 로 생성하여 <Provide></Provide> 컴포넌트를 이용하여 store 속성에 지정 
+- redux-saga 생성은 createSagaMiddleware, applyMiddleware 를 이용. createStore 시, applyMiddleware 주입
+- 주입 완료 후, 생성된 사가미들웨어에 run() 호출 -> 인자값은 rootSaga 전달
+
 ```
