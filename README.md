@@ -4,7 +4,36 @@
 > - react 학습
 > - 간단한 toy project
 > - 마크업 연습 및 학습
+> - react 프로젝트 구성을 하면서, 필요한 라이브러리 및 설정에 익숙해지자
 
 
-## project dependency
+## project dependency & setting
+
+```
+- 직접 하나하나 구성.
+
+npm init -y
+
+// react lib
+npm i -S react react-dom
+npm i -S redux react-redux redux-saga
+npm i -S react-router-dom
+
+// babel
+npm i -D @babel/core @babel/preset-react @babel/preset-env
+npm i -D babel-loader
+npm i -S @babel/polyfill
+
+// webpack
+npm i -D webpack webpack-dev-server webpack-cli
+npm i -D html-webpack-plugin
+npm i -D mini-css-extract-plugin
+
+// scss
+npm i -D style-loader css-loader sass-loader
+
+
+* loader 는 웹팩이 번들링을 할때 JS가 아닌 자원(CSS, HTML, Image 등)들을 변환하게 해준다.
+* plugin 은 부가적인 기능이며 번들링된 결과물에 추가효과를 부여한다고 이해하면 된다.
+```
 
