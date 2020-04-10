@@ -6,7 +6,9 @@ const initialState = {
 
 export default function testReducer(state = initialState, action) {
 
-    switch  (action.type) {
+    console.log(action);
+
+    switch(action.type) {
         case types.ADD_NUMBER :
             return {
                 ...state,
