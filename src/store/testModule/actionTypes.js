@@ -1,0 +1,1 @@
+export const ADD_NUMBER = 'test/ADD_NUMBER';
