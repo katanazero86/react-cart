@@ -1,12 +1,13 @@
 import {call, put, takeEvery} from 'redux-saga/effects';
 
 import * as types from '../../testModule/actionTypes';
-import { addNumber } from '../../testModule/actions';
+import { addNumber, addNumberSaga } from '../../testModule/actions';
 
 function* addNumberTest(action) {
     try {
-        console.log('addNumber Saga');
+        console.log('addNumber Saga..');
         yield put(addNumber());
+        // yield put(addNumberSaga()); // 이런식으로 호출하면, 무한반복.
     } catch(error) {
         console.log('fail..');
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
-import {addNumber} from '../store/testModule/actions'
+import {addNumber, addNumberSaga} from '../store/testModule/actions'
 
 function Test() {
 
@@ -11,6 +11,10 @@ function Test() {
         dispatch(addNumber());
     };
 
+    const addNumberSagaDispatch = () => {
+        dispatch(addNumberSaga());
+    };
+
     return (
         <div className='App-wrap'>
             TEST
@@ -18,6 +22,7 @@ function Test() {
                 {number}
             </p>
             <button onClick={addNumberDispatch}>add number</button>
+            <button onClick={addNumberSagaDispatch}>add number(saga)</button>
         </div>
     )
 }
