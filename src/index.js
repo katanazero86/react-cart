@@ -6,9 +6,13 @@ import '@babel/polyfill';
 
 import App from './App';
 
+// router
+import {BrowserRouter} from 'react-router-dom';
+
 // redux-saga
 import createSagaMiddleware from 'redux-saga';
 import rootSaga from './store/saga/index.js';
+
 const sagaMiddleware = createSagaMiddleware();
 
 // redux
@@ -20,7 +24,9 @@ const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App/>
-    </Provider>
+    <BrowserRouter>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </BrowserRouter>
     , document.getElementById('app'));

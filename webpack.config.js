@@ -32,6 +32,14 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        // proxy: { // proxy URLs to backend development server
+        //     '/api': 'http://localhost:3000'
+        // },
+        // contentBase: path.join(__dirname, 'public'), // boolean | string | array, static file location
+        historyApiFallback: true, // true for index.html upon 404, object for multiple paths
+        hot: true, // hot module replacement. Depends on HotModuleReplacementPlugin
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
