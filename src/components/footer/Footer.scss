@@ -1,0 +1,41 @@
+@import '../../scss/mixins';
+
+
+.wrap {
+  background: #f4f5f6;
+  padding : 6px;
+
+  .body {
+    color : #6f7174;
+
+    @include dFlex(row);
+    justify-content: center;
+
+    &-info-contract {
+      border-right: 1px solid #6f7174;
+
+      padding-right: 10px;
+
+      &-company {
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+
+    }
+
+    &-info-sns {
+
+      padding-left: 10px;
+
+      &-icon {
+        img {
+          width: 28px;
+          margin: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,70 @@
+@import '../../scss/mixins';
+
+
+.wrap {
+  padding: 4px;
+
+  @include boxshadow(1);
+
+  .body {
+    @include dFlex(row);
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo {
+
+      @include dFlex(row);
+      align-items: center;
+
+      img {
+        width: 45%;
+        height: 100%;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    &-user {
+      @include dFlex(row);
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+
+      padding-right: 10px;
+
+      &-name {
+        font-size: 15px;
+        font-weight: 500;
+        color: #202020;
+        margin-right: 10px;
+      }
+
+      img {
+        width: 18%;
+        height: 100%;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+      }
+
+      &-cart-count {
+        border-radius: 12px;
+        background-color: cornflowerblue;
+        padding: 1px 5px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 600;
+        color: #f4f5f6;
+
+        position: absolute;
+        top: -4px;
+        right: 0;
+      }
+
+    }
+
+
+  }
+
+}

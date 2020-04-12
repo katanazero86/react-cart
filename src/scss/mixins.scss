@@ -1,0 +1,47 @@
+// overflow
+@mixin overflow() {
+  overflow: auto;
+}
+
+// box-shadow
+@mixin boxshadow($num : 1) {
+  @if $num == 1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  @if $num == 2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  @if $num == 3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  @if $num == 4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+
+// flex
+
+@mixin dFlex($type : 'row') {
+  @if $type == 'row' {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }@else {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+@mixin dFlexWrap($type : 'row') {
+  @if $type == 'row' {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }@else {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
