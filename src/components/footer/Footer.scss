@@ -3,10 +3,10 @@
 
 .wrap {
   background: #f4f5f6;
-  padding : 6px;
+  padding: 6px;
 
   .body {
-    color : #6f7174;
+    color: #6f7174;
 
     @include dFlex(row);
     justify-content: center;
@@ -36,6 +36,16 @@
         }
       }
     }
+
+    &-copyright {
+      text-align: right;
+      padding: 0 4px;
+      color: #727272;
+      font-style: italic;
+      font-size: 16px;
+
+    }
+
   }
 
 }

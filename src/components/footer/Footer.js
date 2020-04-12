@@ -15,7 +15,7 @@ function Footer() {
                         대표 : zero86
                     </p>
                     <p style={{fontSize : '14px'}}>
-                        연락처 : xxxx<br/>
+                        연락처 : 010-1234-5678<br/>
                         E-mail : zero86@test.com
                     </p>
                 </div>
@@ -28,6 +28,11 @@ function Footer() {
                         <img src='/assets/images/ico_blog.png'/>
                     </div>
                 </div>
+            </div>
+            <div className={FooterStyle['body-copyright']}>
+                <p>
+                    © 2020 zero86 All Rights Reserved.
+                </p>
             </div>
         </footer>
     )
