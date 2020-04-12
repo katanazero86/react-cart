@@ -1,0 +1,182 @@
+[
+  {
+    "menuId": 1,
+    "menuName": "순대국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 2,
+    "menuName": "참치국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 3,
+    "menuName": "마요국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 4,
+    "menuName": "오징어국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 5,
+    "menuName": "소고기국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 6,
+    "menuName": "미역국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 7,
+    "menuName": "짜장국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 8,
+    "menuName": "라면국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 9,
+    "menuName": "불닭국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 10,
+    "menuName": "돈까스국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 11,
+    "menuName": "만두국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 12,
+    "menuName": "계란국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 13,
+    "menuName": "13번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 14,
+    "menuName": "14번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 15,
+    "menuName": "15번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 16,
+    "menuName": "16번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 17,
+    "menuName": "17번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 18,
+    "menuName": "18번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 19,
+    "menuName": "19번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  },
+  {
+    "menuId": 20,
+    "menuName": "20번국밥",
+    "imgUrl": "",
+    "menuSummary": "",
+    "menuDescription": "",
+    "menuPrice": 5000,
+    "likeCount": 10
+  }
+]
