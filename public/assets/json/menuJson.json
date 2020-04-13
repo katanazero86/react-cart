@@ -2,181 +2,201 @@
   {
     "menuId": 1,
     "menuName": "순대국밥",
-    "imgUrl": "",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10
+    "menuSummary": "몸에 좋은 순대가 듬뿍!",
+    "menuDescription": "맛있는 순대와 여러가지 야채가 많이 들어갔어요!",
+    "menuPrice": 2500,
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 2,
     "menuName": "참치국밥",
-    "imgUrl": "",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10
+    "menuSummary": "몸에 좋은 참치가 듬뿍!",
+    "menuDescription": "맛있는 참치와 DHA를 챙겨보세요!",
+    "menuPrice": 3000,
+    "likeCount": 10,
+    "isSold": true,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 3,
     "menuName": "마요국밥",
-    "imgUrl": "",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10
+    "menuSummary": "담백한 마요네즈가 듬뿍!",
+    "menuDescription": "마요네즈와 다양한 야채가 만난 환상적인 조합!",
+    "menuPrice": 6000,
+    "likeCount": 4,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 4,
     "menuName": "오징어국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10
+    "menuPrice": 6000,
+    "likeCount": 0,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 5,
     "menuName": "소고기국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10
+    "menuPrice": 7000,
+    "likeCount": 5,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 6,
     "menuName": "미역국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 0,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 7,
     "menuName": "짜장국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 20,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 8,
     "menuName": "라면국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10
+    "menuPrice": 6000,
+    "likeCount": 7,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 9,
     "menuName": "불닭국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 10,
     "menuName": "돈까스국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 11,
     "menuName": "만두국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 12,
     "menuName": "계란국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 13,
     "menuName": "13번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 14,
     "menuName": "14번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 15,
     "menuName": "15번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 0,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu2.jpg"
   },
   {
     "menuId": 16,
     "menuName": "16번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 0,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu2.jpg"
   },
   {
     "menuId": 17,
     "menuName": "17번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu2.jpg"
   },
   {
     "menuId": 18,
     "menuName": "18번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 10,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu1.jpg"
   },
   {
     "menuId": 19,
     "menuName": "19번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 0,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu2.jpg"
   },
   {
     "menuId": 20,
     "menuName": "20번국밥",
-    "imgUrl": "",
     "menuSummary": "",
     "menuDescription": "",
     "menuPrice": 5000,
-    "likeCount": 10
+    "likeCount": 0,
+    "isSold": false,
+    "imgUrl": "/assets/images/menus/menu2.jpg"
   }
 ]

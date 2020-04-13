@@ -11,10 +11,10 @@ function Footer() {
                     <p className={FooterStyle['body-info-contract-company']}>
                         zero86코드
                     </p>
-                    <p style={{fontSize : '14px'}}>
+                    <p style={{fontSize: '13px'}}>
                         대표 : zero86
                     </p>
-                    <p style={{fontSize : '14px'}}>
+                    <p style={{fontSize: '13px'}}>
                         연락처 : 010-1234-5678<br/>
                         E-mail : zero86@test.com
                     </p>
