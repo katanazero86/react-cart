@@ -45,3 +45,16 @@
     flex-wrap: wrap;
   }
 }
+
+@mixin column() {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+@mixin columnAuto() {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+

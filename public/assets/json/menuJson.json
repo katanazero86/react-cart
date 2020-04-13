@@ -17,7 +17,7 @@
     "menuPrice": 3000,
     "likeCount": 10,
     "isSold": true,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu2.jpg"
   },
   {
     "menuId": 3,
@@ -27,7 +27,7 @@
     "menuPrice": 6000,
     "likeCount": 4,
     "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu3.jpg"
   },
   {
     "menuId": 4,
@@ -37,7 +37,7 @@
     "menuPrice": 6000,
     "likeCount": 0,
     "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu4.jpg"
   },
   {
     "menuId": 5,

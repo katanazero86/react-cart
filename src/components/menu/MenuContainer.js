@@ -22,11 +22,11 @@ function MenuContainer() {
     }, []);
 
     return (
-        <div>
+        <div className={MenuContainerStyle.wrap}>
             {menus.map(menu => {
                 return (
-                    <div>
-                        <MenuImage imgUrl={menu.imgUrl}/>
+                    <div className={MenuContainerStyle.body}>
+                        <MenuImage imgUrl={menu.imgUrl} isSold={menu.isSold}/>
                         <div>
                             <Like/>
                             <Cart/>
