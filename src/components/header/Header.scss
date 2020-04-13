@@ -4,6 +4,9 @@
 .wrap {
   padding: 4px;
   height: 48px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 
   @include boxshadow(1);
 
