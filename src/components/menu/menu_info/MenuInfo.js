@@ -2,9 +2,22 @@ import React from 'react';
 
 import MenuInfoStyle from './MenuInfo.scss';
 
-function MenuInfo() {
+function MenuInfo({menuName, menuSummary, menuDescription, menuPrice}) {
     return (
-        <div></div>
+        <div className={MenuInfoStyle.wrap}>
+            <h3>
+                {menuName}
+            </h3>
+            <p>
+                {menuSummary}
+            </p>
+            <p>
+                {menuDescription}
+            </p>
+            <p>
+                {menuPrice}
+            </p>
+        </div>
     )
 }
 

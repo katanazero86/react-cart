@@ -25,13 +25,13 @@ function MenuContainer() {
         <div className={MenuContainerStyle.wrap}>
             {menus.map(menu => {
                 return (
-                    <div className={MenuContainerStyle.body}>
+                    <div className={MenuContainerStyle.body} key={menu.menuId}>
                         <MenuImage imgUrl={menu.imgUrl} isSold={menu.isSold}/>
                         <div>
                             <Like/>
                             <Cart/>
                         </div>
-                        <MenuInfo/>
+                        <MenuInfo menuName={menu.menuName} menuSummary={menu.menuSummary} menuDescription={menu.menuDescription} menuPrice={menu.menuPrice}/>
                     </div>
                 )
             })}
