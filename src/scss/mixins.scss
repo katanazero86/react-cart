@@ -58,3 +58,31 @@
   flex-basis: auto;
 }
 
+
+// responsive
+
+$breakpoint-mobile: 350px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin mobile() {
+  // 350 ~ 767 사이
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  // 768 ~ 1024 사이
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  // 1024px 이상인 경우
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+

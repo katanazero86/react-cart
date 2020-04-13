@@ -7,19 +7,37 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  max-width: 1065px;
+  max-width: 864px;
 
   margin: 0 auto;
 
   .body {
-    padding : 8px;
-    max-width : 266px;
+    padding: 8px;
+    max-width: 216px;
 
     &-icon {
       @include dFlex();
       align-items: center;
     }
 
+  }
+
+  @include tablet {
+    max-width: 720px;
+    justify-content: space-between;
+    .body {
+      @include columnAuto();
+      max-width: 360px;
+    }
+  }
+
+  @include mobile {
+
+    justify-content: space-between;
+    .body {
+      @include columnAuto();
+      max-width: none;
+    }
   }
 
 }
