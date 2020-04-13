@@ -2,13 +2,10 @@
 
 
 .wrap {
-  padding: 4px;
-  height: 48px;
+  height: 72px;
   position: sticky;
   top: 0;
   background-color: white;
-
-  margin-bottom: 20px;
 
   @include boxshadow(1);
 
@@ -16,20 +13,49 @@
     @include dFlex(row);
     align-items: center;
     justify-content: space-between;
+    height: 100%;
+    padding: 0 24px;
 
     &-logo {
 
       @include dFlex(row);
       align-items: center;
+      color: #1f4f46;
+      font-weight: 600;
+      font-size: 20px;
+      white-space: nowrap;
+      margin-right: 24px;
 
-      img {
-        width: 135px;
-        height: 100%;
-        cursor: pointer;
-        padding: 0;
-        margin: 0;
-      }
+      //img {
+      //  width: 135px;
+      //  height: 100%;
+      //  cursor: pointer;
+      //  padding: 0;
+      //  margin: 0;
+      //}
     }
+
+    //&-nav {
+    //
+    //  width: 100%;
+    //
+    //  ul {
+    //    margin: 0px;
+    //    padding: 0px;
+    //    list-style: none;
+    //  }
+    //
+    //  li {
+    //    display: inline-block;
+    //    list-style: none;
+    //    margin: 0px;
+    //    padding: 0px 8px;
+    //    font-size: 15px;
+    //    color: #1f4f46;
+    //    letter-spacing: 1px;
+    //
+    //  }
+    //}
 
     &-user {
       @include dFlex(row);
@@ -37,6 +63,7 @@
       justify-content: flex-end;
       position: relative;
 
+      padding-top: 4px;
       padding-right: 12px;
 
       &-name {
@@ -56,7 +83,7 @@
 
       &-cart-count {
         border-radius: 12px;
-        background-color: cornflowerblue;
+        background-color: #1f4f46;
         padding: 1px 5px;
         text-align: center;
         font-size: 10px;
