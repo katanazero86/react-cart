@@ -8,7 +8,6 @@ const currencyFormat = (price) => {
 
 function MenuInfo({menuName, menuSummary, menuDescription, menuPrice}) {
 
-
     return (
         <div className={MenuInfoStyle.wrap}>
             <h3 className={MenuInfoStyle['menu-name']}>

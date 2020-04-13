@@ -14,6 +14,12 @@
   .body {
     padding : 8px;
     max-width : 266px;
+
+    &-icon {
+      @include dFlex();
+      align-items: center;
+    }
+
   }
 
 }

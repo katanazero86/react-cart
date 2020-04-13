@@ -4,7 +4,9 @@ import MenuIconStyle from './MenuIcon.scss';
 
 function Cart() {
     return (
-        <div></div>
+        <div className={MenuIconStyle.wrap}>
+            <img src='/assets/images/cart.png' alt='cart'/>
+        </div>
     )
 }
 

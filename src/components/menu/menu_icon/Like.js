@@ -4,7 +4,9 @@ import MenuIconStyle from './MenuIcon.scss';
 
 function Like() {
     return (
-        <div></div>
+        <div className={MenuIconStyle.wrap}>
+            <img src='/assets/images/heart.png' alt='like'/>
+        </div>
     )
 }
 

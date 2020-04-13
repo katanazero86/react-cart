@@ -27,7 +27,7 @@ function MenuContainer() {
                 return (
                     <div className={MenuContainerStyle.body} key={menu.menuId}>
                         <MenuImage imgUrl={menu.imgUrl} isSold={menu.isSold}/>
-                        <div>
+                        <div className={MenuContainerStyle['body-icon']}>
                             <Like/>
                             <Cart/>
                         </div>
