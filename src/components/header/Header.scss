@@ -8,6 +8,8 @@
   top: 0;
   background-color: white;
 
+  margin-bottom: 20px;
+
   @include boxshadow(1);
 
   .body {

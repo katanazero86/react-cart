@@ -14,7 +14,7 @@ import Footer from "./components/footer/Footer";
 function App() {
 
     return (
-        <div style={{height : '100%'}}>
+        <div style={{height : '100%', overflow: 'auto'}}>
             <Header/>
             <Switch>
                 <Route path="/" exact component={Home}/>
