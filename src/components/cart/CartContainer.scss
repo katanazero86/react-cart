@@ -2,23 +2,29 @@
 
 .wrap {
 
-    background: #000;
-    opacity: 0.7;
-
-    position: fixed;
+  .body {
+    background: #fff;
+    position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
     right: 0;
-    z-index: 2;
-
-  .body {
-      background: #fff;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 70%;
+    left: 70%;
+    z-index: 3;
   }
+
+}
+
+.wrap:before {
+
+  background: #000;
+  opacity: 0.7;
+
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 
 }

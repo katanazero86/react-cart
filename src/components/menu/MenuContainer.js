@@ -8,6 +8,7 @@ import Like from "./menu_icon/Like";
 import Cart from "./menu_icon/Cart";
 import MenuInfo from "./menu_info/MenuInfo";
 
+
 function MenuContainer() {
 
     const dispatch = useDispatch();
@@ -26,7 +27,9 @@ function MenuContainer() {
     };
 
     const cartClick = () => {
-        alert('준비중..');
+
+
+
     };
 
     return (

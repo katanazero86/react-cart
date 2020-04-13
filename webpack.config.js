@@ -26,7 +26,7 @@ module.exports = {
                 use: [
                     // "style-loader",
                     MiniCssExtractPlugin.loader,
-                    { loader: 'css-loader', options : {sourceMap: true, modules : {localIdentName: '[name]_[hash:base64:5]'}} },
+                    { loader: 'css-loader', options : {sourceMap: true, modules : {localIdentName: '[local]_[hash:base64:5]'}} },
                     { loader: 'sass-loader', options : {sourceMap: true} }
                 ]
             }

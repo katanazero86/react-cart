@@ -18,7 +18,7 @@ function App() {
     const cartModalVisible = useSelector(store => store.cart.cartModalVisible);
 
     return (
-        <div style={{height : '100%', overflow: 'auto', position : 'relative'}}>
+        <div style={{height : '100%', position : 'relative'}}>
             {cartModalVisible ? <CartContainer/> : ''}
             <Header/>
             <Switch>

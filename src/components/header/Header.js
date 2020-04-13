@@ -11,6 +11,7 @@ function Header() {
 
     const openCartDispatch = () => {
         dispatch(openCart());
+        document.querySelector('#app').style = 'overflow : hidden';
     };
 
     return (
