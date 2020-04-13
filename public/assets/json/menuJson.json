@@ -77,7 +77,7 @@
     "menuPrice": 6000,
     "likeCount": 7,
     "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu4.jpg"
   },
   {
     "menuId": 9,
@@ -87,7 +87,7 @@
     "menuPrice": 5000,
     "likeCount": 10,
     "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu4.jpg"
   },
   {
     "menuId": 10,
@@ -97,7 +97,7 @@
     "menuPrice": 5000,
     "likeCount": 10,
     "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu3.jpg"
   },
   {
     "menuId": 11,
@@ -107,7 +107,7 @@
     "menuPrice": 5000,
     "likeCount": 10,
     "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu3.jpg"
   },
   {
     "menuId": 12,
@@ -137,7 +137,7 @@
     "menuPrice": 5000,
     "likeCount": 10,
     "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
+    "imgUrl": "/assets/images/menus/menu2.jpg"
   },
   {
     "menuId": 15,

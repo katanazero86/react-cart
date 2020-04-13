@@ -21,6 +21,7 @@
     &-icon {
       @include dFlex();
       align-items: center;
+      padding: 0 16px;
     }
 
   }
