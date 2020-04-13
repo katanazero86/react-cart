@@ -2,9 +2,9 @@ import React from 'react';
 
 import MenuIconStyle from './MenuIcon.scss';
 
-function Like() {
+function Like({onClick}) {
     return (
-        <div className={MenuIconStyle.wrap}>
+        <div className={MenuIconStyle.wrap} onClick={onClick}>
             <img src='/assets/images/heart.png' alt='like'/>
         </div>
     )

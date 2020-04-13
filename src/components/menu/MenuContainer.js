@@ -21,6 +21,14 @@ function MenuContainer() {
         getMenusDispatch();
     }, []);
 
+    const likeClick = () => {
+        alert('준비중..');
+    };
+
+    const cartClick = () => {
+        alert('준비중..');
+    };
+
     return (
         <div className={MenuContainerStyle.wrap}>
             {menus.map(menu => {
@@ -28,8 +36,8 @@ function MenuContainer() {
                     <div className={MenuContainerStyle.body} key={menu.menuId}>
                         <MenuImage imgUrl={menu.imgUrl} isSold={menu.isSold}/>
                         <div className={MenuContainerStyle['body-icon']}>
-                            <Like/>
-                            <Cart/>
+                            <Like onClick={likeClick}/>
+                            <Cart onClick={cartClick}/>
                         </div>
                         <MenuInfo menuName={menu.menuName} menuSummary={menu.menuSummary} menuDescription={menu.menuDescription} menuPrice={menu.menuPrice}/>
                     </div>
