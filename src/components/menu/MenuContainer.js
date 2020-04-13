@@ -8,28 +8,33 @@ import Like from "./menu_icon/Like";
 import Cart from "./menu_icon/Cart";
 import MenuInfo from "./menu_info/MenuInfo";
 
-
 function MenuContainer() {
 
     const dispatch = useDispatch();
+    const menus = useSelector(store => store.menu.menus);
 
     const getMenusDispatch = async () => {
         dispatch(getMenus());
-
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         getMenusDispatch();
-    },[]);
+    }, []);
 
     return (
         <div>
-            <MenuImage/>
-            <div>
-                <Like/>
-                <Cart/>
-            </div>
-            <MenuInfo/>
+            {menus.map(menu => {
+                return (
+                    <div>
+                        <MenuImage imgUrl={menu.imgUrl}/>
+                        <div>
+                            <Like/>
+                            <Cart/>
+                        </div>
+                        <MenuInfo/>
+                    </div>
+                )
+            })}
         </div>
     )
 }

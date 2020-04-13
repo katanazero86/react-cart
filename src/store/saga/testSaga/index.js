@@ -6,9 +6,9 @@ import { addNumber, addNumberSaga } from '../../testModule/actions';
 function* addNumberTest(action) {
     try {
         console.log('addNumber Saga..');
-        yield put(addNumber());
+
         // yield put(addNumberSaga()); // 이런식으로 호출하면, 무한반복.
-    } catch(error) {
+    } catch(error) {yield put(addNumber());
         console.log('fail..');
 
     }

@@ -2,9 +2,11 @@ import React from 'react';
 
 import MenuImageStyle from './MenuImage.scss';
 
-function MenuImage() {
+function MenuImage({imgUrl}) {
     return (
-        <div></div>
+        <div>
+            <img src={imgUrl ? imgUrl : ''}/>
+        </div>
     )
 }
 
