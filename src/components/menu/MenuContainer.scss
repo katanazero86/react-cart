@@ -27,20 +27,19 @@
   }
 
   @include tablet {
-    max-width: 720px;
     justify-content: space-between;
     .body {
-      @include columnAuto();
-      max-width: 360px;
+      @include column();
+      flex-basis: 48%;
     }
   }
 
   @include mobile {
-
-    justify-content: space-between;
+    padding: 16px;
+    justify-content: center;
     .body {
       @include columnAuto();
-      max-width: none;
+      flex-basis: 100%;
     }
   }
 
