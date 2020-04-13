@@ -148,55 +148,5 @@
     "likeCount": 0,
     "isSold": false,
     "imgUrl": "/assets/images/menus/menu2.jpg"
-  },
-  {
-    "menuId": 16,
-    "menuName": "16번국밥",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 0,
-    "isSold": false,
-    "imgUrl": "/assets/images/menus/menu2.jpg"
-  },
-  {
-    "menuId": 17,
-    "menuName": "17번국밥",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10,
-    "isSold": false,
-    "imgUrl": "/assets/images/menus/menu2.jpg"
-  },
-  {
-    "menuId": 18,
-    "menuName": "18번국밥",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 10,
-    "isSold": false,
-    "imgUrl": "/assets/images/menus/menu1.jpg"
-  },
-  {
-    "menuId": 19,
-    "menuName": "19번국밥",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 0,
-    "isSold": false,
-    "imgUrl": "/assets/images/menus/menu2.jpg"
-  },
-  {
-    "menuId": 20,
-    "menuName": "20번국밥",
-    "menuSummary": "",
-    "menuDescription": "",
-    "menuPrice": 5000,
-    "likeCount": 0,
-    "isSold": false,
-    "imgUrl": "/assets/images/menus/menu2.jpg"
   }
 ]
