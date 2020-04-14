@@ -12,13 +12,15 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import CartContainer from "./components/cart/CartContainer";
 
+import './App.css';
+
 
 function App() {
 
     const cartModalVisible = useSelector(store => store.cart.cartModalVisible);
 
     return (
-        <div style={{height : '100%', position : 'relative'}}>
+        <div className='App-container'>
             {cartModalVisible ? <CartContainer/> : ''}
             <Header/>
             <Switch>

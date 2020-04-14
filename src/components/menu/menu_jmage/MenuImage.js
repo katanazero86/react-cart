@@ -2,10 +2,10 @@ import React from 'react';
 
 import MenuImageStyle from './MenuImage.scss';
 
-function MenuImage({imgUrl, isSold}) {
+function MenuImage({imgUrl, isSold, isLazy}) {
     return (
         <div className={MenuImageStyle.wrap}>
-            <img src={imgUrl ? imgUrl : ''}/>
+            {isLazy ? <img data-src={imgUrl || ''} className={isLazy && 'img-lazy'}/> : <img src={imgUrl || ''} />}
         </div>
     )
 }

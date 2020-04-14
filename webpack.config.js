@@ -21,17 +21,22 @@ module.exports = {
                 }
             },
             {
+                test: /\.(css)/,
+                use: ["style-loader", { loader: 'css-loader', options : {sourceMap: true} }],
+            },
+            {
                 test: /\.(scss)/,
                 exclude: /node_modules/,
                 use: [
                     // "style-loader",
                     MiniCssExtractPlugin.loader,
-                    { loader: 'css-loader', options : {sourceMap: true, modules : {localIdentName: '[local]_[hash:base64:5]'}} },
-                    { loader: 'sass-loader', options : {sourceMap: true} }
+                    { loader: 'css-loader', options : {sourceMap: true, modules : true}},
+                    { loader: 'sass-loader', options: {sourceMap: true,}}
                 ]
             }
         ]
     },
+    devtool: 'source-map',
     devServer: {
         // proxy: { // proxy URLs to backend development server
         //     '/api': 'http://localhost:3000'
@@ -46,7 +51,7 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: './[name].[hash].css'
+            filename: './style.[hash].css'
         }),
         new CleanWebpackPlugin({
             cleanAfterEveryBuildPatterns: ['dist']

@@ -1,0 +1,13 @@
+.App-container {
+  height : 100%;
+  position : relative;
+}
+
+.img-lazy {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1.2s ease-in;
+}
