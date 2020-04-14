@@ -1,18 +1,5 @@
 @import '../../scss/mixins';
 
-.wrap {
-
-  .body {
-    background: #fff;
-    position: absolute;
-    top: 72px;
-    bottom: 0;
-    right: 0;
-    left: 70%;
-    height: calc(100vh - 72px);
-  }
-
-}
 
 .wrap:before {
 
@@ -25,5 +12,46 @@
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 100;
+}
+
+.wrap {
+
+  .body {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 450px;
+    z-index: 101;
+
+    &-empty {
+      @include dFlex();
+      align-items: center;
+      height: 100%;
+      p {
+        font-family: 'Jua';
+        font-weight: 400;
+        color: #1f4f46;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+      }
+    }
+
+  }
+
+  @include tablet {
+    .body {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    .body {
+      width: 100%;
+    }
+  }
 
 }
