@@ -1,5 +1,4 @@
 .App-container {
-  height : 100%;
   position : relative;
 }
 
@@ -9,5 +8,5 @@
 
 .fade-in {
   opacity: 1;
-  transition: opacity 0.6s ease-in;
+  transition: opacity 0.65s ease-in;
 }

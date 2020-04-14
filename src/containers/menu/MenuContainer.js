@@ -1,18 +1,20 @@
-import React, {useEffect, useCallback} from 'react';
-import {useSelector, useDispatch, shallowEqual} from 'react-redux';
-import {getMenus} from '../../store/menuModule/actions'
+import React, {useEffect} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
+import {getMenus} from '../../store/menuModule/actions';
+import {addCart} from '../../store/cartModule/actions';
 
 import MenuContainerStyle from './MenuContainer.scss';
-import MenuImage from "./menu_jmage/MenuImage";
-import Like from "./menu_icon/Like";
-import Cart from "./menu_icon/Cart";
-import MenuInfo from "./menu_info/MenuInfo";
+import MenuImage from "../../components/menu/menu_jmage/MenuImage";
+import Like from "../../components/menu/menu_icon/Like";
+import Cart from "../../components/menu/menu_icon/Cart";
+import MenuInfo from "../../components/menu/menu_info/MenuInfo";
+import MenuTitle from "../../components/menu/menu_title/MenuTitle";
 
 const imageLazyLoading = () => {
 
     const lazyNodeList = document.querySelectorAll('.img-lazy');
 
-    if(lazyNodeList.length > 0) {
+    if (lazyNodeList.length > 0) {
         if (window.IntersectionObserver) {
 
             const options = {
@@ -51,6 +53,7 @@ function MenuContainer() {
 
     const dispatch = useDispatch();
     const menus = useSelector(store => store.menu.menus);
+    const cartItems = useSelector(store => store.cart.cartItems);
 
     const getMenusDispatch = () => {
         dispatch(getMenus());
@@ -68,20 +71,30 @@ function MenuContainer() {
         alert('준비중..');
     };
 
-    const cartClick = () => {
-
+    const addCartDispatch = (targetMenu) => {
+        if (cartItems.length == 0) {
+            dispatch(addCart(targetMenu));
+        } else {
+            const item = cartItems.find(item => item.menuId === targetMenu.menuId);
+            if (item) {
+                alert('이미 장바구니에 추가된 상품입니다!');
+                return false;
+            }
+            dispatch(addCart(targetMenu));
+        }
     };
 
 
     return (
         <div className={MenuContainerStyle.wrap}>
+            <MenuTitle title="Menus" subTitle="Delicious all day, every day."/>
             {menus.map(menu => {
                 return (
                     <div className={MenuContainerStyle.body} key={menu.menuId}>
                         <MenuImage imgUrl={menu.imgUrl} isSold={menu.isSold} isLazy/>
                         <div className={MenuContainerStyle['body-icon']}>
                             <Like onClick={likeClick}/>
-                            <Cart onClick={cartClick}/>
+                            <Cart onClick={() => addCartDispatch(menu)}/>
                         </div>
                         <MenuInfo menuName={menu.menuName} menuSummary={menu.menuSummary}
                                   menuDescription={menu.menuDescription} menuPrice={menu.menuPrice}/>

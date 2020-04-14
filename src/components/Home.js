@@ -1,9 +1,8 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import HomeStyle from './Home.scss'
 
-
-import MenuContainer from "./menu/MenuContainer";
+import MenuContainer from "../containers/menu/MenuContainer";
 
 function Home() {
 

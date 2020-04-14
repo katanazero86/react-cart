@@ -1,0 +1,33 @@
+@import '../../../scss/mixins';
+
+.wrap {
+
+  height: 72px;
+  padding: 0 16px;
+  background-color: #1f4f46;
+
+  .body {
+
+    @include dFlex();
+    align-items: center;
+    height: 100%;
+
+    color: #fff;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+  }
+
+}

@@ -5,11 +5,11 @@
   .body {
     background: #fff;
     position: absolute;
-    top: 0;
+    top: 72px;
     bottom: 0;
     right: 0;
     left: 70%;
-    z-index: 3;
+    height: calc(100vh - 72px);
   }
 
 }
@@ -25,6 +25,5 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
 
 }

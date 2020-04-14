@@ -10,7 +10,7 @@ import Page404 from "./components/error/Page404";
 import {Switch, Route, Link, Redirect} from 'react-router-dom';
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import CartContainer from "./components/cart/CartContainer";
+import CartContainer from "./containers/cart/CartContainer";
 
 import './App.css';
 
