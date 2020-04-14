@@ -5,6 +5,7 @@
   height: 72px;
   padding: 0 16px;
   background-color: #1f4f46;
+  @include boxshadow(1);
 
   .body {
 

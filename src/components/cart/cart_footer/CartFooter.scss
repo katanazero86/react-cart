@@ -1,0 +1,50 @@
+@import '../../../scss/mixins';
+
+.wrap {
+
+  border-top : 1px solid #e7e7e7;
+
+  .body {
+
+    @include dFlexWrap();
+
+    padding: 8px;
+
+    p {
+      width: 100%;
+      color : #1f4f46;
+      font-size: 16px;
+      letter-spacing: -0.5px;
+      font-weight: 600;
+
+      @include dFlex();
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-order-btn {
+      margin-top: 16px;
+      width: 100%;
+      button {
+        background: none;
+        outline: none;
+        color: #1f4f46;
+        border: 1px solid #214f46;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 14px;
+        font-size: 20px;
+        width: 100%;
+      }
+
+      button:hover {
+        color: white;
+        background: #1f4f46;
+      }
+
+    }
+
+  }
+
+}

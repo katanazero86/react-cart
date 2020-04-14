@@ -1,6 +1,85 @@
+@import '../../../scss/mixins';
+
 .wrap {
 
+  position: relative;
+  height: calc(100% - 270px);
+
   .body {
+
+    overflow: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    ul {
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+
+        margin: 0;
+        padding: 8px;
+        list-style: none;
+
+        @include dFlex();
+        align-items: flex-start;
+
+        img {
+          width: 128px;
+          object-fit: cover;
+          margin-right: 8px;
+        }
+
+
+        .item-info {
+
+          flex-grow: 1;
+
+          strong {
+            font-weight: 600;
+          }
+
+          &-summary {
+            font-size: 13px;
+            font-weight: 400;
+            color: #6f7174;
+            word-break: keep-all;
+            margin-top: 2px;
+          }
+
+          &-price {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            color: #3e454c;
+          }
+
+        }
+
+        button {
+          background: none;
+          color: #9b9b9b;
+          padding: 4px 14px;
+          border: 1px solid #c9cacc;
+          outline: none;
+          cursor: pointer;
+          font-weight: 600;
+        }
+
+        button:hover {
+          background: #9b9b9b;
+          color: white;
+        }
+
+      }
+
+    }
 
   }
 

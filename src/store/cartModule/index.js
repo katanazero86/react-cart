@@ -29,9 +29,10 @@ export default function cartReducer(state = initialState, action) {
             }
 
         case types.REMOVE_CART :
+            const currentCartItems = state.cartItems;
             return {
                 ...state,
-                cartItems : [...state.cartItems, action.item]
+                cartItems : [...currentCartItems.filter(item => item.menuId !== action.item.menuId)]
             }
 
         case types.ITEM_CART :
