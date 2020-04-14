@@ -57,11 +57,12 @@ function MenuContainer() {
     };
 
     useEffect(() => {
-        if(menus.length == 0) {
-            getMenusDispatch();
-        }
+        getMenusDispatch();
+    }, []);
+
+    useEffect(() => {
         imageLazyLoading();
-    }, [menus.length]);
+    }, [menus]);
 
     const likeClick = () => {
         alert('준비중..');
