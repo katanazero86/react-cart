@@ -112,8 +112,8 @@
   {
     "menuId": 12,
     "menuName": "계란국밥",
-    "menuSummary": "",
-    "menuDescription": "",
+    "menuSummary": "유기농 계란을 사용한 국밥!",
+    "menuDescription": "직접 계약한 농가에 유기농 계란을 통해, 다양한 야채베이스로 만들어진 국밥",
     "menuPrice": 5000,
     "likeCount": 10,
     "isSold": false,

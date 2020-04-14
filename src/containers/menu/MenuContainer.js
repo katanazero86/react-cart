@@ -89,6 +89,24 @@ function MenuContainer() {
         <div className={MenuContainerStyle.wrap}>
             <MenuTitle title="Menus" subTitle="Delicious all day, every day."/>
             {menus.map(menu => {
+
+                if (menu.isSold) {
+                    return (
+                        <div className={MenuContainerStyle.body} key={menu.menuId}>
+                            <p className={MenuContainerStyle['is-sold-text']}>상품 품절</p>
+                            <div className={MenuContainerStyle['is-sold']}>
+                                <MenuImage imgUrl={menu.imgUrl} isSold={menu.isSold} isLazy/>
+                                <div className={MenuContainerStyle['body-icon']}>
+                                    <Like onClick={likeClick}/>
+                                    <Cart onClick={() => addCartDispatch(menu)}/>
+                                </div>
+                                <MenuInfo menuName={menu.menuName} menuSummary={menu.menuSummary}
+                                          menuDescription={menu.menuDescription} menuPrice={menu.menuPrice}/>
+                            </div>
+                        </div>
+                    )
+                }
+
                 return (
                     <div className={MenuContainerStyle.body} key={menu.menuId}>
                         <MenuImage imgUrl={menu.imgUrl} isSold={menu.isSold} isLazy/>
