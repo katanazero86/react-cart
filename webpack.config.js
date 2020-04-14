@@ -3,13 +3,14 @@ const path = require('path');
 // plugin
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'bundle.js'
+        filename: 'js/bundle.js',
     },
     module: {
         rules: [
@@ -22,7 +23,7 @@ module.exports = {
             },
             {
                 test: /\.(css)/,
-                use: ["style-loader", { loader: 'css-loader', options : {sourceMap: true} }],
+                use: ["style-loader", {loader: 'css-loader', options: {sourceMap: true}}],
             },
             {
                 test: /\.(scss)/,
@@ -30,10 +31,11 @@ module.exports = {
                 use: [
                     // "style-loader",
                     MiniCssExtractPlugin.loader,
-                    { loader: 'css-loader', options : {sourceMap: true, modules : true}},
-                    { loader: 'sass-loader', options: {sourceMap: true,}}
+                    {loader: 'css-loader', options: {sourceMap: true, modules: true}},
+                    {loader: 'sass-loader', options: {sourceMap: true,}}
                 ]
-            }
+            },
+
         ]
     },
     devtool: 'source-map',
@@ -51,10 +53,13 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: './style.[hash].css'
+            filename: 'css/style.[hash].css'
         }),
         new CleanWebpackPlugin({
             cleanAfterEveryBuildPatterns: ['dist']
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: './public/assets', to: './assets' },
+        ]),
     ],
 }
