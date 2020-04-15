@@ -92,3 +92,9 @@ module.exports = {
 - 주입 완료 후, 생성된 사가미들웨어에 run() 호출 -> 인자값은 rootSaga 전달
 
 ```
+
+## project about
+
+> - react toy project
+> - react + redux + redux-saga + webpack + babel + scss 로 구성
+> - e-commerce 장바구니를 구현 
