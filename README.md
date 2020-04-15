@@ -40,6 +40,9 @@ npm i -S axios
 // local server
 npm i -S serve
 
+// modal lib
+npm i -S sweetalert2
+
 
 * loader 는 웹팩이 번들링을 할때 JS가 아닌 자원(CSS, HTML, Image 등)들을 변환하게 해준다.
 * plugin 은 부가적인 기능이며 번들링된 결과물에 추가효과를 부여한다고 이해하면 된다.
