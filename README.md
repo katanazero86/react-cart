@@ -97,4 +97,7 @@ module.exports = {
 
 > - react toy project
 > - react + redux + redux-saga + webpack + babel + scss 로 구성
-> - e-commerce 장바구니를 구현 
+> - e-commerce 장바구니를 구현
+> - 함수형 컴포넌트로 작성(Functional Component) : 간결하고, 추론하기 쉬운 코드
+> - Container Component 와 Presentation Component 구조로 구성 : 책임과 역할 분리 -> 재사용성 증가 또는 유지보수 편리
+> - SCSS 로 작성 -> CSS 를 작성하면 기본적으로 전역범위이며, 자식요소 상속 및 우선순위연산에 여러움이 있음 -> 혼란스러움 -> 이를 보안하고 쉽게 작성하고자 SCSS 사용
