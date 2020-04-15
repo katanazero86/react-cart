@@ -29,9 +29,16 @@ npm i -D webpack webpack-dev-server webpack-cli
 npm i -D html-webpack-plugin
 npm i -D mini-css-extract-plugin
 npm i -D clean-webpack-plugin
+npm i -D copy-webpack-plugin
 
 // scss
 npm i -D style-loader css-loader sass-loader node-sass
+
+// axios
+npm i -S axios
+
+// local server
+npm i -S serve
 
 
 * loader 는 웹팩이 번들링을 할때 JS가 아닌 자원(CSS, HTML, Image 등)들을 변환하게 해준다.
@@ -60,7 +67,8 @@ const path = require('path');
 // plugin
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: [],
@@ -76,7 +84,6 @@ module.exports = {
 }
 
 - https://webpack.js.org/configuration/
-
 
 - /src/index.js 에 import '@babel/polyfill'; 코드 적용(polyfill)
 
