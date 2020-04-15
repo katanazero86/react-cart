@@ -10,6 +10,8 @@ import Cart from "../../components/menu/menu_icon/Cart";
 import MenuInfo from "../../components/menu/menu_info/MenuInfo";
 import MenuTitle from "../../components/menu/menu_title/MenuTitle";
 
+import Swal from '../../swal';
+
 const imageLazyLoading = () => {
 
     const lazyNodeList = document.querySelectorAll('.img-lazy');
@@ -74,13 +76,39 @@ function MenuContainer() {
     const addCartDispatch = (targetMenu) => {
         if (cartItems.length == 0) {
             dispatch(addCart(targetMenu));
+            Swal.fire({
+                icon: 'success',
+        title: '상품이 장바구니에 추가 되었습니다!',
+                toast : true,
+                timer: 1500,
+                width : '325px',
+                position: 'bottom',
+                showConfirmButton: false,
+            });
         } else {
             const item = cartItems.find(item => item.menuId === targetMenu.menuId);
             if (item) {
-                alert('이미 장바구니에 추가된 상품입니다!');
+                Swal.fire({
+                    icon: 'error',
+                    title: '이미 추가하신 상품 입니다!',
+                    toast : true,
+                    timer: 1500,
+                    width : '325px',
+                    position: 'bottom',
+                    showConfirmButton: false,
+                });
                 return false;
             }
             dispatch(addCart(targetMenu));
+            Swal.fire({
+                icon: 'success',
+                title: '상품이 장바구니에 추가 되었습니다!',
+                toast : true,
+                timer: 1500,
+                width : '325px',
+                position: 'bottom',
+                showConfirmButton: false,
+            });
         }
     };
 

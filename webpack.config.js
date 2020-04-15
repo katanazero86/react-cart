@@ -23,7 +23,11 @@ module.exports = {
             },
             {
                 test: /\.(css)/,
-                use: ["style-loader", {loader: 'css-loader', options: {sourceMap: true}}],
+                include: [
+                    path.resolve(__dirname, "src"),
+                    path.resolve(__dirname, "node_modules/sweetalert2")
+                ],
+                use: ["style-loader", {loader: 'css-loader', options: {sourceMap: true, }}],
             },
             {
                 test: /\.(scss)/,
