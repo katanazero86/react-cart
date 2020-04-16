@@ -1,9 +1,7 @@
 import React from 'react';
 import CartBodyStyle from './CartBody.scss';
 
-const currencyFormat = (price) => {
-    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-};
+import {currencyFormat} from '../../../utils/formatUtils';
 
 function CartBody({cartItems, onClick}) {
 

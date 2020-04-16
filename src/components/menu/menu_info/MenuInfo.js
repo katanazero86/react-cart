@@ -2,9 +2,7 @@ import React from 'react';
 
 import MenuInfoStyle from './MenuInfo.scss';
 
-const currencyFormat = (price) => {
-  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-};
+import {currencyFormat} from '../../../utils/formatUtils';
 
 function MenuInfo({menuName, menuSummary, menuDescription, menuPrice}) {
 

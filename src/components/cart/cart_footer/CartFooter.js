@@ -2,9 +2,7 @@ import React from 'react';
 
 import CartFooterStyle from './CartFooter.scss';
 
-const currencyFormat = (price) => {
-    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-};
+import {currencyFormat} from '../../../utils/formatUtils';
 
 function CartFooter({cartItems, onClick}) {
     return (
