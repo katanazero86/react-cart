@@ -12,44 +12,7 @@ import MenuTitle from "../../components/menu/menu_title/MenuTitle";
 
 import Swal from '../../swal';
 
-const imageLazyLoading = () => {
-
-    const lazyNodeList = document.querySelectorAll('.img-lazy');
-
-    if (lazyNodeList.length > 0) {
-        if (window.IntersectionObserver) {
-
-            const options = {
-                root: null,
-                thredhold: 0.8
-            }
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const targetEl = entry.target;
-                        targetEl.setAttribute('src', targetEl.dataset.src);
-                        targetEl.dataset.src = '';
-                        targetEl.classList.add('fade-in');
-                        targetEl.classList.remove('img-lazy');
-                        observer.unobserve(targetEl);
-                    }
-                });
-            }, options);
-            lazyNodeList.forEach(node => observer.observe(node));
-
-        } else {
-            lazyNodeList.forEach(node => {
-                node.setAttribute('src', node.dataset.src);
-                node.dataset.src = '';
-                node.classList.add('fade-in');
-                node.classList.remove('img-lazy');
-            })
-        }
-    }
-
-
-};
+import {imageLazyLoading} from '../../utils/imageLazyLoadUtil';
 
 function MenuContainer() {
 
